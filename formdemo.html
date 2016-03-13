@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HTML Form Demo</title>
+<link rel="stylesheet" type="text/css" href="css/nav.css" />
+
+<script type="text/javascript" src="js/jquery-1.2.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+<div id="wrap">
+    	<div id="header">
+			<img src="images/logo.png" alt="Logo" title="Logo"/>
+		</div>
+
+		<div id="nav">
+
+			<ul class = "navigationlins">
+
+				<li><a class="first" href="index.html">Home</a></li>
+				<li><a class="second" href="web.html">Web</a></li>
+				<li><a class="third" href="html.html">HTML</a></li>
+                <li><a class="third" href="css.html">CSS</a></li>
+                <li><a class="third" href="javascript.html">JavaScript</a></li>
+                <li><a class="third" href="jquery.html">JQuery</a></li>
+                
+
+			</ul>
+
+		</div>
+        
+        
+
+		<div id="web-content">
+        <p class="web-paragraph">Form Demo</p>
+        
+        <p class="form-message">This is a demo of the HTML based web form, for the purpose of this tutorial send a job application form by filling out all the
+        required part of this online application. Clicking on the submit button will let you see what you have been writing on the form.   </p>
+        
+     
+     
+     
+     
+     
+     <div id="form-example">  
+     <form name= "ApplicationFormDemo" action="#">
+<br /> 
+       <h3>Job Application Form Demo</h3>
+      
+       
+       
+       <div id="title-form">
+       
+       
+       	Title 
+        
+        <input type="checkbox" name="titlemr" value="mr"/>Mr
+		<input type="checkbox" name="titlemrs" value="mrs"/>Mrs
+        <input type="checkbox" name="titlems" value="ms"/>Ms
+		
+        
+        
+       
+       </div>
+       
+       
+         First Name 
+         <input type=TEXT value="Please type your first name" name="firstname" style="margin-left:100px;"  >
+         <div id="secondname-form">
+       Second Name 
+       <input type=TEXT value="Please type your second name" name="secondname" style="margin-left:90px;" >
+      
+	    </div>
+		<div id="gender-form">
+	   
+    Gender 
+	
+    <input type="radio" name="gendermale" value="male">Male
+	<input type="radio" name="gendermale" value="female">Female
+       </div>
+       
+       
+       <div id="address-form">
+       
+       Address 
+       <br />
+       <input type=TEXT value="First line of your address" name="Address1"><br />
+       <input type=TEXT value="Second line of your address" name="Address2"><br />
+       <input type=TEXT value="Town/City" name="Address3"><br />
+       <input type=TEXT value="County" name="Address4"><br />
+       <input type=TEXT value="Post Code" name="Address5" style="width:auto; text-align:right;" >
+       
+       
+       
+       
+       </div>
+       
+      
+	<div id="position-form">	  
+    Position Applying for? 
+        
+        <select name="dropdownlist">
+		<option value="pleaseselect" disabled="disabled" selected="selected">Select one from the list</option>
+        <option value="CustomerAssistant">Customer Assistant</option>
+        <option value="SalesManager">Sales Manager</option>        
+        <option value="ITAssistant">IT Assistant</option>
+        <option value="CrewMember">Crew Member</option>
+		</select>
+        
+         <div id="email-form">
+        Email 
+	  
+	  <input type=TEXT value="Please type your email address" name="emailaddress" style="margin-left:90px;"  />
+	  </div>
+       
+      </div>
+	  
+	 <div id="telephone-form">
+      Telephone Number 
+      <input type=TEXT value="Please type your telephone number" name="telephonenumber" style="margin-left:90px;"  />
+	 
+      
+      <div id="dob-form">
+      Date of Birth 
+      <input type="text" value="1970-01-01"  name="dateofbirth"/>
+      </div>
+      
+	  </div>
+	  
+	  
+      <div id="posiionfound-form">
+      
+      Where did you find this job opportunity?
+      
+      <select name="jobopportunity">
+		<option value="pleaseselect" disabled="disabled" selected="selected">Select one from the list</option>
+        <option value="JobCenter">Job Center</option>
+        <option value="Friend">Friend</option>        
+        <option value="Leaflet">Leaflet</option>
+        <option value="Newspaper">News Paper</option>
+
+		</select>
+      
+      
+      
+      </div>
+	  
+	  
+<div id="describe-form">
+      
+      Explain how you dealt with a customer enquiry and what you have done to help them? 
+      <br />
+      <textarea name="demotext" rows="5" cols="10">
+      </textarea> 
+      
+      
+      
+      </div>
+	  
+	  
+      <div id="employmentstatus-form">
+      
+      What is your current employment status? 
+      
+      <div id="radiostatus-form">
+        <input type="radio" name="employmentstatus" value="unemployed" style="width:30px">Unemployed
+        <br />
+		<input type="radio" name="employmentstatus" value="employed" style="width:30px">Employed
+        <br />
+        
+        <input type="radio" name="employmentstatus" value="student" style="width:30px">Student
+		<br /><input type="radio" name="employmentstatus" value="selfemployed" style="width:30px">Self-Employed
+        
+      
+      </div>
+      
+      </div>
+      
+      
+	  
+     
+       <h3>
+         <input type=BUTTON value="Submit" name="mySubmit" onClick="openWin()">
+       </h3>
+		</form>
+
+		
+		
+		</div>
+		
+		
+		
+       
+       
+       
+    
+      
+      
+      
+      
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="footer">
+  
+  <ul class = "footer-nav">
+
+				<li><a class="first" href="contactus.html">Contact Us</a></li>
+				<li><a class="second" href="aboutus.html">About Us</a></li>
+				
+
+	</ul>
+
+
+
+</div>
+
+</div>
+
+
+
+
+<script type="text/javascript">
+
+
+function openWin(){
+      var formData = document.ApplicationFormDemo.mySubmit.form;
+      var myWin = open("", "","");
+
+      myWin.document.write("Name of this form is: " + formData.name + "<br>");
+	 
+      myWin.document.write("<br>" + "Title - Mr = ") + myWin.document.write(formData.titlemr.checked + "<br>");
+	  myWin.document.write("Title - Mrs = ") + myWin.document.write(formData.titlemrs.checked + "<br>");
+	  myWin.document.write("Title - Ms = ") + myWin.document.write(formData.titlems.checked + "<br>");
+	  
+	  myWin.document.write("<br>" + "First Name = ") + myWin.document.write(formData.firstname.value + "<br>");
+	  myWin.document.write("Second Name = ") + myWin.document.write(formData.secondname.value + "<br>");
+	  
+	  myWin.document.write("<br>" + "Gender  = ") + myWin.document.write(formData.gendermale.value + "<br>");
+	  
+	  myWin.document.write("<br>" + "Address  - First line of your address = ") + myWin.document.write(formData.Address1.value + "<br>");
+	  myWin.document.write("Address  - Second line of your address = ") + myWin.document.write(formData.Address2.value + "<br>");
+	  myWin.document.write("Address  - Town/City = ") + myWin.document.write(formData.Address3.value + "<br>");
+	  myWin.document.write("Address  - County = ") + myWin.document.write(formData.Address4.value + "<br>");
+	  myWin.document.write("Address  - Post Code = ") + myWin.document.write(formData.Address5.value + "<br>");
+	  
+	  myWin.document.write("<br>" + "Position applying for = ") + myWin.document.write(formData.dropdownlist.value + "<br>");
+	 
+      myWin.document.write("<br>" + "Email Address = ") + myWin.document.write(formData.emailaddress.value + "<br>");
+	  
+	  myWin.document.write("<br>" + "Telephone Number = ") + myWin.document.write(formData.telephonenumber.value + "<br>");
+	  
+	  myWin.document.write("<br>" + "Date of Birth = ") + myWin.document.write(formData.dateofbirth.value + "<br>");
+	  
+	  myWin.document.write("<br>" + "Where did you find this job opportunity = ") + myWin.document.write(formData.jobopportunity.value + "<br>");
+	  
+	  myWin.document.write("<br>" + "Explain how you dealt with a customer enquiry and what you have done to help them = ") + myWin.document.write(formData.demotext.value + "<br>");
+      
+	  myWin.document.write("<br>" + "What is your current employment status = ") + myWin.document.write(formData.employmentstatus.value + "<br>");
+	  
+	  
+	  myWin.document.close();
+    }
+
+
+
+
+
+$('#slider').cycle({
+	
+	fx:			'scrollHorz' ,
+	timeout:	3000,
+	next:		"#next",
+	prev:		"#prev",
+	pager:		"#pager",
+	pause:		1
+		
+});
+
+      </script>
+</body>
+</html>

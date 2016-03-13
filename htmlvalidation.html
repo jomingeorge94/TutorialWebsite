@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HTML - Web Standard and Validation</title>
+<link rel="stylesheet" type="text/css" href="css/nav.css" />
+
+<script type="text/javascript" src="js/jquery-1.2.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+<div id="wrap">
+    	<div id="header">
+			<img src="images/logo.png" alt="Logo" title="Logo"/>
+		</div>
+
+		<div id="nav">
+
+			<ul class = "navigationlins">
+
+				<li><a class="first" href="index.html">Home</a></li>
+				<li><a class="second" href="web.html">Web</a></li>
+				<li><a class="third" href="html.html">HTML</a></li>
+                <li><a class="third" href="css.html">CSS</a></li>
+                <li><a class="third" href="javascript.html">JavaScript</a></li>
+                <li><a class="third" href="jquery.html">JQuery</a></li>
+                
+
+			</ul>
+
+		</div>
+        
+        
+
+		<div id="standardandvalidation">
+        <p class="web-paragraph">HTML - Web Standard and Validation</p>
+        <p>It is important to follow the Web Standard by the people who develop websites as well as the browsers. Whever you have completed a webpage, make sure 
+        that you validate your page with the W3C Markup Validaton Service as it will keep your page up to the standard and help you free off from errors.  Web pages which
+        follows the Web Standard are easier for the search engine (Google Chrome, Internet Explorer, etc) to access and read the file and to show the output on the website. 
+      	 </p>
+         <p class="form-message">Accessibility</p>
+         <p>Accessibility is an important part in HTML Standard, as it will make it easier for peopl with disabilities. This will help them to change their
+         website experience much more easier. In the Web Standard, blind people can still use the website long as there something that reads out what is happening on the 
+         screen. Also for people that has bad eye-sight can use an option to rearrage the website size.    </p>
+        
+         <p class="form-message">W3C</p>
+         <p>Inventor  of the web Tim Berners-Lee created W3C which maintains the Web Standards. W3C stands for World Wide Web Consortium, created in October 1994. </p>
+    
+    	 <p class="form-message">Web Validation</p>
+         <p>W3C Markup Validation Service is the validator that you have to run your website to check each single pages of your site against the Web Standards. 
+         Before you run the validator you have to check that you have used the right DOCTYPE because it will give you errors if you haven't met its standards. 
+         After scanning your file it will either say that you have passed or a list of errors that it has found which did not met its standards. You can validate your CSS 
+         file with W3C as well as your XHTML and XML files.</p>
+         
+        <button type="button" id="htmlvalidator">Click to see pictures (open/close)</button>
+        <div id="htmlvalidatorpicture">
+         <img src="images/validator.fw.png" alt="validation">
+        </div>
+         
+    
+        
+        
+        </div>		
+
+	
+    
+  
+
+
+
+   
+        
+
+
+    
+
+
+
+<div id="footer">
+
+<ul class = "footer-nav">
+
+				<li><a class="first" href="contactus.html">Contact Us</a></li>
+				<li><a class="second" href="aboutus.html">About Us</a></li>
+				
+
+			</ul>
+
+
+
+</div>
+
+
+
+
+</div>
+
+<script type="text/javascript">
+
+
+$(document).ready(function(){
+  $("#htmlvalidator").click(function(){
+    $("#htmlvalidatorpicture").fadeToggle(2000);
+  });
+});
+
+
+
+
+$('#slider').cycle({
+	
+	fx:			'scrollHorz' ,
+	timeout:	3000,
+	next:		"#next",
+	prev:		"#prev",
+	pager:		"#pager",
+	pause:		1
+		
+});
+
+      </script>
+</body>
+</html>

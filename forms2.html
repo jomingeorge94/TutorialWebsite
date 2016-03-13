@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HTML Form Tutorial 2</title>
+<link rel="stylesheet" type="text/css" href="css/nav.css" />
+
+<script type="text/javascript" src="js/jquery-1.2.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+<div id="wrap">
+    	<div id="header">
+			<img src="images/logo.png" alt="Logo" title="Logo"/>
+		</div>
+
+		<div id="nav">
+
+			<ul class = "navigationlins">
+
+				<li><a class="first" href="index.html">Home</a></li>
+				<li><a class="second" href="web.html">Web</a></li>
+				<li><a class="third" href="html.html">HTML</a></li>
+                <li><a class="third" href="css.html">CSS</a></li>
+                <li><a class="third" href="javascript.html">JavaScript</a></li>
+                <li><a class="third" href="jquery.html">JQuery</a></li>
+                
+
+			</ul>
+
+		</div>
+        
+        
+
+		<div id="web-content">
+        <p class="web-paragraph">HTML Form Tutorial</p>
+        
+        <h2>Checkboxes</h2>
+        <p class="form-message">Checkboxes are used on a form to let the user to select more than one option from a number of choices. This is a demo of how it would look like on a webpage; </p>
+        
+        <p>Which of the following activities you are enrolled into? (you can select more than one)
+        <br />
+        <input type="checkbox" name="activities" value="Cricket">Cricket<br>
+		<input type="checkbox" name="activities" value="Football">Football<br />
+        <input type="checkbox" name="activities" value="Tennis">Tennis<br>
+        <input type="checkbox" name="activities" value="NoneOfThem">None of them<br>
+        
+        <div id="textfield"><img src="images/check-box.png" alt="check box"/></div>
+        
+        
+        
+        <h2>Drop Down Lists</h2>
+        <p class="form-message">Drop Down Lists are used in a web form to allow the users to select an option from a list. </p>
+        
+        <p>What is your favourite colour?
+        <br />
+        <select name="dropdownlist">
+        <option value="white">White</option>
+        <option value="red">Red</option>        
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+
+		</select>
+        
+        <div id="dropdownlist"><img src="images/drop-downlist.png" alt="drop down list"/></div>
+        
+        
+        
+        
+        <h2>Multi-Line Input</h2>
+        <p class="form-message">With the use of the Multi-line input the user will be able to fit more character than using a text field which will have a character limit usually around 50 words. This is a demo showing how it looks like on a webpage; </p>
+        
+        <p>Describe yourself (hobbies, skills,etc)
+        <br />
+        <textarea name="demotext" rows="5" cols="10">
+        </textarea>    
+        
+         <div id="textareabox"><img src="images/multiline.png" alt="textbox"/></div>  
+        
+        
+        <h2>Password Field</h2>
+        <p class="form-message">Password Field is used in web form for security purposes. It is exactly same as one-line input however it hides the input and display the text in a bulletpoint format. </p>
+        
+        <p>Type your password:
+        <br />
+        <input type="password" name="password" />
+        
+         <div id="passwordpicture"><img src="images/passwordfield.png" alt="password"/></div>  
+
+        
+        
+        <h2>Submit Button</h2>
+        <p class="form-message">Submit Button on a web form is used to submit the data on the form to a server or to an external link. </p>
+        
+        <input type="button" value="Submit" style="width:90px"/>
+        <br />
+         <div id="submitbuttonpicture"><img src="images/submit.png" alt="submit button"/></div> 
+        
+        
+        
+  
+  <form action="formdemo.html" method="get">
+   <button>Form Demo</button>
+   </form>
+ 
+  
+  
+
+
+
+
+   
+        
+
+
+</div>    
+
+
+
+<div id="footer">
+
+<ul class = "footer-nav">
+
+				<li><a class="first" href="contactus.html">Contact Us</a></li>
+				<li><a class="second" href="aboutus.html">About Us</a></li>
+				
+
+	</ul>
+
+
+
+</div>
+
+
+
+
+</div>
+
+<script type="text/javascript">
+
+
+$('#slider').cycle({
+	
+	fx:			'scrollHorz' ,
+	timeout:	3000,
+	next:		"#next",
+	prev:		"#prev",
+	pager:		"#pager",
+	pause:		1
+		
+});
+
+      </script>
+</body>
+</html>

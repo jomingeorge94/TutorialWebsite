@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HTML Form Tutorial 1</title>
+<link rel="stylesheet" type="text/css" href="css/nav.css" />
+
+<script type="text/javascript" src="js/jquery-1.2.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+<div id="wrap">
+    	<div id="header">
+			<img src="images/logo.png" alt="Logo" title="Logo"/>
+		</div>
+
+		<div id="nav">
+
+			<ul class = "navigationlins">
+
+				<li><a class="first" href="index.html">Home</a></li>
+				<li><a class="second" href="web.html">Web</a></li>
+				<li><a class="third" href="html.html">HTML</a></li>
+                <li><a class="third" href="css.html">CSS</a></li>
+                <li><a class="third" href="javascript.html">JavaScript</a></li>
+                <li><a class="third" href="jquery.html">JQuery</a></li>
+                
+
+			</ul>
+
+		</div>
+        
+        
+
+		<div id="web-content">
+        <p class="web-paragraph">HTML Form Tutorial</p>
+        
+        <p class="form-message">Forms are used on a webpage to allow the users to enter data which then will be passed to a server for analysing the data. 
+        Forms are usually done by either paper or online using radio button, text fields, check boxes, buttons, etc. 
+        In this section of the tutorial we will be only looking at the basic use of forms on a webpage (i.e. how to input text fields, password field, etc.), 
+        however later on in the JavaScript section we will be looking more advanced features that you could use on a form such as regular expressions, etc. </p>
+        
+        
+        
+        
+       	
+  
+  <div id="form-tag">
+  
+  <img src="images/form-tag.fw.png" alt="form tags"/>
+  
+  <p class="form-message">Form Control is not hard to understand, all you need to know is that each form control will have a name and sometimes a value attribute. 
+  Form has two methods, post and get methods. Post methods are used to send the data on a form to a server as a HTTP transaction wheras the Get method will show the data (name and value) on the URL. 
+  It is much more safer and secure to use the POST method instead of the GET method. </p>
+  
+  <p class="form-message">Input element is used to collect the user's information. It can vary depending on the attributes, these are some of the type which we will be covering in this webpage; text field, radio buttons, check boxes, drop down lists, multi-line input, password field and submit button.</p>
+  
+  <h2>Text Field</h2>
+  <p class="form-message">Text Field is used on a form to let the user enter text into an one-line text box. This is a demo of how it looks like on a webpage;</p>
+  <p>
+  	Enter your Full Name: <input type="text" name="fullname"/>
+    <div id="textfield"><img src="images/text-field.png" alt="text field"/></div>
+  
+  
+  <h2>Radio Buttons</h2>
+  <p class="form-message">Radio Button on a form let the user to select one of the button from a number of choices. Below you can see a demo of how it looks like on a webpage;</p>
+  <p>Select your Age Group: 
+  
+    <input type="radio" name="agegroup" value="male">0-15
+	<input type="radio" name="agegroup" value="female">16+
+  
+  	<div id="radiobutton"><img src="images/radio-button.png" alt="radio button"/></div>
+  
+  
+  
+  
+  
+  
+  <form action="forms2.html" method="get">
+   <button>Next</button>
+   </form>
+  
+   </div>	
+  
+  
+  </div> 
+
+
+
+   
+        
+
+
+    
+
+
+
+<div id="footer">
+
+<ul class = "footer-nav">
+
+				<li><a class="first" href="contactus.html">Contact Us</a></li>
+				<li><a class="second" href="aboutus.html">About Us</a></li>
+				
+</ul>
+
+
+
+</div>
+
+
+
+
+</div>
+
+<script type="text/javascript">
+
+
+$('#slider').cycle({
+	
+	fx:			'scrollHorz' ,
+	timeout:	3000,
+	next:		"#next",
+	prev:		"#prev",
+	pager:		"#pager",
+	pause:		1
+		
+});
+
+      </script>
+</body>
+</html>
