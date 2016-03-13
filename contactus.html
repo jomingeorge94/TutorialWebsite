@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Contact US</title>
+<link rel="stylesheet" type="text/css" href="css/nav.css" />
+<script type="text/javascript" src="js/jquery-1.2.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+<div id="wrap">
+    	<div id="header">
+			<img src="images/logo.png" alt="Logo" title="Logo"/>
+		</div>
+
+		<div id="nav">
+
+			<ul class = "navigationlins">
+
+				<li><a class="first" href="index.html">Home</a></li>
+				<li><a class="second" href="web.html">Web</a></li>
+				<li><a class="third" href="html.html">HTML</a></li>
+                <li><a class="third" href="css.html">CSS</a></li>
+                <li><a class="third" href="javascript.html">JavaScript</a></li>
+                <li><a class="third" href="jquery.html">JQuery</a></li>
+
+			</ul>
+
+		</div>
+	
+	<div id="message">
+   <h2>Contact US</h2>
+   <p>We are very happy to assist you with any problems that you are having, to get in touch with our team use the below form and we will try our best to get in touch with you as soon as we can.</p>
+   
+   <p></p>
+    </div>
+    
+   <div id="contact-methods">
+    <div id="form-wrap">
+ 
+	<form method="get" id="contactusform" action="#">
+    <table id="contactustable">
+   
+  <tr>
+ 
+    <td colspan="3"><h4>Contact Form:</h4></td>
+    
+    </tr>
+  <tr>
+   
+    <td>Full Name: </td>
+    <td><input type="text" name="fullname" id="fullname" form="contactusform">
+                </td>
+    <td><span id="error-fullname"></span></td>
+  </tr>
+  <tr>
+    <td>Telephone Number: </td>
+    <td><input type="text" name="telephonenumber" id="telephonenumber" form="contactusform"></td>
+    <td><span id="error-telephonenumber"></span></td>
+  </tr>
+  <tr>
+    <td>Address: </td>
+    <td> <textarea rows="4" cols="30" id="addressbox" name="addressbox" form="contactusform"></textarea></td>
+    <td><span id="error-address"> </span></td>
+  </tr>
+  <tr>
+    <td>Message: </td>
+    <td> <textarea rows="4" cols="30" id="messagetosend" name="messagetosend" form="contactusform"></textarea></td>
+    <td><span id="error-message"></span></td>
+  </tr>
+  <tr>
+    <td colspan="2"><input type="submit" name="submit" id="submit" value="submit" onclick="return submitvalidation();" form="contactusform"> </td>
+    <td><span id="messagesend">Message Status : </span></td>
+  </tr>
+    </table>
+
+</form>
+    
+	
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+ 
+
+
+    
+
+
+
+<div id="footer">
+
+<ul class = "footer-nav">
+
+				<li><a class="first" href="#">Contact Us</a></li>
+				<li><a class="second" href="aboutus.html">About Us</a></li>
+				
+
+			</ul>
+
+
+
+</div>
+
+
+
+
+</div>
+
+<script type="text/javascript">
+
+
+
+
+function submitvalidation()
+{
+    var fullname=document.getElementById("fullname").value;
+	var addressbox=document.getElementById("addressbox").value;
+	var telephonenumber=document.getElementById("telephonenumber").value;
+	var message=document.getElementById("messagetosend").value;
+	var messagesend=document.getElementById("messagesend").value;
+	
+	
+    
+    var error=0;
+	
+    if(fullname == "")
+    {
+        var msg="please enter name";
+        document.getElementById("error-fullname").innerHTML=msg; 
+        error++;
+    }
+    else
+    {
+        document.getElementById("error-fullname").innerHTML="";
+    }
+	
+	
+	
+	
+	if(addressbox == "")
+    {
+        var msg="please enter address";
+        document.getElementById("error-address").innerHTML=msg;
+       error++;
+    }
+    else
+    {
+        document.getElementById("error-address").innerHTML="";
+    }
+	
+	
+	if(telephonenumber == "")
+    {
+        var msg="please enter contact no.";
+        document.getElementById("error-telephonenumber").innerHTML=msg;
+        error++;
+    }
+    else
+    {
+        var reg=/^([0-9]{7,12})$/;
+        if(reg.test(telephonenumber) == false)
+        {
+            var msg="insert valid contact no.";
+            document.getElementById("error-telephonenumber").innerHTML=msg;
+            error++;
+        }
+        else
+        {
+            document.getElementById("error-telephonenumber").innerHTML="";
+        }
+    }
+	
+	
+	if(message == "")
+    {
+        var msg="please enter the message";
+        document.getElementById("error-message").innerHTML=msg; 
+        error++;
+    }
+    else
+    {
+        document.getElementById("error-message").innerHTML="";
+    }
+	
+
+
+    if(error > 0) 
+    {
+		
+		var msg="Message Status : Error";
+        document.getElementById("messagesend").innerHTML=msg; 
+        return false;
+		
+			
+			
+    }
+	 else 
+    {
+       	alert("Your Message has been Send !!");
+    	return true;
+		
+    }
+	
+
+}
+
+
+$('#slider').cycle({
+	
+	fx:			'scrollHorz' ,
+	timeout:	3000,
+	next:		"#next",
+	prev:		"#prev",
+	pager:		"#pager",
+	pause:		1
+		
+});
+
+      </script>
+</body>
+</html>
