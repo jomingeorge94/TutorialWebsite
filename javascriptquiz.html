@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Java Script Quiz</title>
+<link rel="stylesheet" type="text/css" href="css/nav.css" />
+
+<script type="text/javascript" src="js/jquery-1.2.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+<div id="wrap">
+    	<div id="header">
+			<img src="images/logo.png" alt="Logo" title="Logo"/>
+		</div>
+
+		<div id="nav">
+
+			<ul class = "navigationlins">
+
+				<li><a class="first" href="index.html">Home</a></li>
+				<li><a class="second" href="web.html">Web</a></li>
+				<li><a class="third" href="html.html">HTML</a></li>
+                <li><a class="third" href="css.html">CSS</a></li>
+                <li><a class="third" href="javascript.html">JavaScript</a></li>
+                <li><a class="third" href="jquery.html">JQuery</a></li>
+                
+
+			</ul>
+
+		</div>
+        
+        
+
+		<div id="web-content">
+        <p class="web-paragraph">Java Script Quiz</p>
+        <p>This is a demo of a JavaScript based Quiz which has been designed to test your knowledge as well as to get a tast of what you have learned while you were
+        using this website. To open the Quiz click on the button which says "Click to see the Quiz (open/close)". After finishing the quiz click on the submit button
+        and you will see your score.  </p>
+         <button type="button" id="quizbutton">Click to see the Quiz (open/close)</button><br/>
+        <div id="javascriptquestions">
+        <p>Question 1: What does CSS stands for?</p>
+        <table id="questiontable1">
+  <tr>
+    <td>
+      <input type="radio" name="question1" id="a1" value="a1">
+      Cascading Style Sheet
+      
+    <td><input type="radio" name="question1" id="a2" value="a1">
+    Creative Style Sheets</td>
+  </tr>
+  <tr>
+    <td><input type="radio" name="question1" id="a3" value="a1">
+   Computer Style Sheets
+</td>
+    <td><input type="radio" name="question1" id="a4" value="a1">
+    Colorful Style Sheets</td>
+  </tr>
+</table><br/>
+       	<span id="question1"></span>
+
+
+
+<p>Question 2: What does HTML stands for?</p>
+        <table id="questiontable2" >
+  <tr>
+    <td>
+      <input type="radio" name="question2" id="a5" value="a1">
+      Home Tool Markup Language
+      
+    <td><input type="radio" name="question2" id="a6" value="a1">
+    Hyper Text Markup Language</td>
+  </tr>
+  <tr>
+    <td><input type="radio" name="question2" id="a7" value="a1">
+    Hyperlinks and Text Markup Language</td>
+    <td><input type="radio" name="question2" id="a8" value="a1">
+    Helping The Modelling Language</td>
+  </tr>
+</table>
+<br/>
+        <span id="question2"></span>
+        <p>Question 3: Inside which HTML element do we put the JavaScript?</p>
+        
+        <table id="questiontable3" >
+          <tr>
+    <td>
+      <input type="radio" name="question3" id="a9" value="a1">
+      &lt;script&gt;
+      
+    <td><input type="radio" name="question3" id="a10" value="a1">
+    &lt;js&gt;</td>
+  </tr>
+  <tr>
+    <td><input type="radio" name="question3" id="a11" value="a1">
+    &lt;javascript&gt;</td>
+    <td><input type="radio" name="question3" id="a12" value="a1">
+    &lt;html&gt;</td>
+  </tr>
+</table>
+<br/>
+        <span id="question3"></span>
+        
+        <p>Question 4: Which doctype is correct for HTML5?</p>
+        
+        <table id="questiontable4" >
+          <tr>
+    <td>
+      <input type="radio" name="question4" id="a13" value="a1">
+      &lt;Doctype5&gt;
+
+    <td><input type="radio" name="question4" id="a14" value="a1">
+    &lt;doctype 5.0&gt;</td>
+  </tr>
+  <tr>
+    <td><input type="radio" name="question4" id="a15" value="a1">
+    &lt;html5&gt;</td>
+    <td><input type="radio" name="question4" id="a16" value="a1">
+    &lt;!DOCTYPE html&gt;</td>
+  </tr>
+</table>
+<br/>
+        <span id="question4"></span>
+        
+         <p>Question 5: Choose the correct HTML tag for the largest heading ?</p>
+        
+        <table id="questiontable5" >
+          <tr>
+    <td>
+      <input type="radio" name="question5" id="a17" value="a1">
+      &lt;h6&gt;
+ 
+    <td><input type="radio" name="question5" id="a18" value="a1">
+    &lt;h1&gt;</td>
+  </tr>
+  <tr>
+    <td><input type="radio" name="question5" id="a19" value="a1">
+    &lt;headingtop&gt;</td>
+    <td><input type="radio" name="question5" id="a20" value="a1">
+    &lt;head&gt;</td>
+  </tr>
+</table>
+<br/>
+        <span id="question5"></span>
+
+
+
+
+	
+    
+    <br/>
+    
+    <span id="totalscore">Total Score is: </span>
+        <p>
+        
+          <input type="submit" name="Submit" id="Submit" value="Submit" onClick="submitbutton()">
+        </p>
+
+        
+        </div>		
+
+	</div>
+    
+  
+
+
+
+   
+        
+
+
+    
+
+
+
+<div id="footer">
+
+<ul class = "footer-nav">
+
+				<li><a class="first" href="contactus.html">Contact Us</a></li>
+				<li><a class="second" href="aboutus.html">About Us</a></li>
+				
+
+	</ul>
+
+
+
+</div>
+
+
+
+
+</div>
+
+<script type="text/javascript">
+
+
+
+
+function submitbutton(){
+	var score =0;
+	var answer1 = document.getElementById("a1")
+	var answer2 = document.getElementById("a6")
+	var answer3 = document.getElementById("a9")
+	var answer4 = document.getElementById("a16")
+	var answer5 = document.getElementById("a18")
+	if (answer1.checked ==true){
+		score++
+		var msg="Correct answer";
+        document.getElementById("question1").innerHTML=msg;
+		var totalmark = score;
+		document.getElementById("totalscore").innerHTML="Total Score is: " + totalmark + "/5";
+		
+		
+		}
+	else {
+		var msgfail = "Incorrect answer!!";
+		 document.getElementById("question1").innerHTML=msgfail;
+		}
+		
+		if (answer2.checked ==true){
+		score++
+		var msg="Correct answer";
+        document.getElementById("question2").innerHTML=msg;
+		var totalmark = score;
+		document.getElementById("totalscore").innerHTML="Total Score is: " + totalmark + "/5";
+		
+		}
+	else {
+		var msgfail = "Incorrect answer!!";
+		 document.getElementById("question2").innerHTML=msgfail;
+		}
+		
+	if (answer3.checked ==true){
+		score++
+		var msg="Correct answer";
+        document.getElementById("question3").innerHTML=msg;
+		var totalmark = score;
+		document.getElementById("totalscore").innerHTML="Total Score is: " + totalmark + "/5";
+		
+		}
+	else {
+		var msgfail = "Incorrect answer!!";
+		 document.getElementById("question3").innerHTML=msgfail;
+		 
+		}
+		
+		if (answer4.checked ==true){
+		score++
+		var msg="Correct answer";
+        document.getElementById("question4").innerHTML=msg;
+		var totalmark = score;
+		document.getElementById("totalscore").innerHTML="Total Score is: " + totalmark + "/5";
+		
+		}
+	else {
+		var msgfail = "Incorrect answer!!";
+		 document.getElementById("question4").innerHTML=msgfail;
+		 
+		}
+		
+		if (answer5.checked ==true){
+		score++
+		var msg="Correct answer";
+        document.getElementById("question5").innerHTML=msg;
+		var totalmark = score;
+		document.getElementById("totalscore").innerHTML="Total Score is: " + totalmark + "/5";
+		
+		}
+	else {
+		var msgfail = "Incorrect answer!!";
+		 document.getElementById("question5").innerHTML=msgfail;
+		 
+		}
+
+	
+
+}
+
+$(document).ready(function(){
+  $("#quizbutton").click(function(){
+    $("#javascriptquestions").fadeToggle(2000);
+  });
+});
+
+
+$('#slider').cycle({
+	
+	fx:			'scrollHorz' ,
+	timeout:	3000,
+	next:		"#next",
+	prev:		"#prev",
+	pager:		"#pager",
+	pause:		1
+		
+});
+
+      </script>
+</body>
+</html>

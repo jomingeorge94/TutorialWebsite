@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JavaScript Examples</title>
+<link rel="stylesheet" type="text/css" href="css/nav.css" />
+
+<script type="text/javascript" src="js/jquery-1.2.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+<div id="wrap">
+    	<div id="header">
+			<img src="images/logo.png" alt="Logo" title="Logo"/>
+		</div>
+
+		<div id="nav">
+
+			<ul class = "navigationlins">
+
+				<li><a class="first" href="index.html">Home</a></li>
+				<li><a class="second" href="web.html">Web</a></li>
+				<li><a class="third" href="html.html">HTML</a></li>
+                <li><a class="third" href="css.html">CSS</a></li>
+                <li><a class="third" href="javascript.html">JavaScript</a></li>
+                <li><a class="third" href="jquery.html">JQuery</a></li>
+                
+
+			</ul>
+
+		</div>
+        
+        
+
+		<div id="web-content">
+        <p class="web-paragraph">Java Script Tutorial and Examples </p>
+        <p> In this page you will be seeing some of the interesting and useful JavaScripts. For each of the example that you will see in this website, there will be a button next to it which will allow you to
+        see the example not in code but in an interactive mode. 
+        </p>
+        
+        <p class="form-message">Light Bulb 
+        </p>
+        <p>Click on the bulb and it will let you turn on and off the bulb.</p>
+        
+        <div id="lightbulb">
+         			<img id="light-test" onclick="changeImage()" src="images/lightoff.png" width="100" height="180" alt="light bulb">
+        </div>
+        
+        </div>	
+        	
+	<div id="jquerytext">Click to see the Light Bulb code</div>
+		<div id="bulbimage">
+        <img src="images/bulbcode.fw.png" alt="bulbcode"/>
+        <p>Click any where on this border to hide this section</p>
+        
+        </div>
+        
+        <div id="DataTypes">
+        <p class="form-message">Data Types </p>
+        <p>These are the Data Types;</p>
+        <ul>
+        	<li>String</li>
+            <li>Numbers</li>	
+            <li>Boolean</li>	
+            <li>Array</li>
+            <li>Object</li>
+            <li>Null</li>	
+            <li>Undefined</li>			
+        </ul>
+        
+        
+        <p class="form-message">JavaScript String </p>
+        <p>String is a variable and you can store mixture of characters. For example, "Jomin George". When using a string data type you always have to 
+        write with quotes and it can be either single or double quotes. </p> 
+       <div id="stringhide">Click to see an example of Data type - String code</div>
+        <div id="string">
+        <div id="datatypeimages-string">
+        <img  src="images/string.fw.png" alt="data type image - string" />
+        <p>Click any where on this border to hide this section</p>
+        </div>
+        </div>
+        
+        <p class="form-message">JavaScript Numbers </p>
+        <p>There is only one type of JavaScript number data type. If you want to write a decimal number you have to use the decimal point. You can use the scientic notation to
+        write big and small numbers (for example, 1405023000 or 0.0002345).Below you can see an example of JavaScript Number data type. </p> 
+        <div id="numberhide">Click to see an example of Data type - Number code</div>
+        <div id="number">
+        <div id="datatypeimages-number">
+        <img  src="images/numbers.fw.png" alt="data type image - number"/>
+        <p>Click any where on this border to hide this section</p>
+        </div>
+        </div>
+        
+         <p class="form-message">JavaScript Boolean </p>
+        <p>Boolean data type can onlyhave two values, either true or false.  </p> 
+        <div id="booleanhide">Click to see an example of Data type - Boolean code</div>
+          <div id="boolean">
+        <div id="datatypeimages-boolean">
+        <img  src="images/boolean.fw.png" alt="data type image - boolean" />
+        <p>Click any where on this border to hide this section</p>
+        </div>
+        </div>
+        
+        <p class="form-message">JavaScript Array </p>
+        <p>Arrays are used to store items. In JavaScript you write an array using square brackets and then double quotes for each of them item you have in the array.
+        To seprate items you can use comma.  </p> 
+         <div id="arrayhide">Click to see an example of Data type - Array code</div>
+        <div id="array">
+        <div id="datatypeimages-array">
+        <img  src="images/array.fw.png" alt="data type image - array"/>
+        <p>Click any where on this border to hide this section</p>
+        </div>
+        </div>
+        
+        <p class="form-message">JavaScript Undefine and Null </p>
+        <p>Null is when you set a variable value to be null, which means it doesn't have any value at all. Undefine is when you declare a variable with no value given, therefore your 
+        value for that variable will be undefined</p> 
+        <div id="nullandundefinehide">Click to see an example of Data type - Array code</div>
+        <div id="nullandundefine">
+        <div id="datatypeimages-nullanddefine">
+        <img  src="images/undefinedandnull.fw.png" alt="data type image - null and define" />
+        <p>Click any where on this border to hide this section</p>
+        </div>
+        </div>
+        
+        
+        
+        
+        
+        </div>
+	
+   
+
+   
+        
+
+
+    
+
+
+
+<div id="footer">
+
+<ul class = "footer-nav">
+
+				<li><a class="first" href="contactus.html">Contact Us</a></li>
+				<li><a class="second" href="aboutus.html">About Us</a></li>
+				
+
+			</ul>
+
+
+
+</div>
+
+
+
+
+</div>
+
+<script type="text/javascript">
+
+//show and hid the code for light bulb on the website
+$(document).ready(function(){
+  $("#jquerytext").click(function(){
+    $("#bulbimage").slideDown("slow");
+  });
+  
+  $("#bulbimage").click(function(){
+    $("#bulbimage").slideUp("slow");
+  });
+});
+
+
+
+$(document).ready(function(){
+  $("#stringhide").click(function(){
+    $("#string").slideDown("slow");
+  });
+  
+  $("#string").click(function(){
+    $("#string").slideUp("slow");
+  });
+})
+
+
+$(document).ready(function(){
+  $("#numberhide").click(function(){
+    $("#number").slideDown("slow");
+  });
+  
+  $("#number").click(function(){
+    $("#number").slideUp("slow");
+  });
+})
+
+
+$(document).ready(function(){
+  $("#booleanhide").click(function(){
+    $("#boolean").slideDown("slow");
+  });
+  
+  $("#boolean").click(function(){
+    $("#boolean").slideUp("slow");
+  });
+})
+
+
+$(document).ready(function(){
+  $("#arrayhide").click(function(){
+    $("#array").slideDown("slow");
+  });
+  
+  $("#array").click(function(){
+    $("#array").slideUp("slow");
+  });
+})
+
+
+$(document).ready(function(){
+  $("#nullandundefinehide").click(function(){
+    $("#nullandundefine").slideDown("slow");
+  });
+  
+  $("#nullandundefine").click(function(){
+    $("#nullandundefine").slideUp("slow");
+  });
+})
+
+
+
+
+$('#slider').cycle({
+	
+	fx:			'scrollHorz' ,
+	timeout:	3000,
+	next:		"#next",
+	prev:		"#prev",
+	pager:		"#pager",
+	pause:		1
+		
+});
+
+function changeImage() {
+    var image = document.getElementById('light-test');
+    if (image.src.match("lighton")) {
+        image.src = "images/lightoff.png";
+    } else {
+        image.src = "images/lighton.png";
+    }
+}
+
+      </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Java Script Form</title>
+<link rel="stylesheet" type="text/css" href="css/nav.css" />
+
+<script type="text/javascript" src="js/jquery-1.2.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+<div id="wrap">
+    	<div id="header">
+			<img src="images/logo.png" alt="Logo" title="Logo"/>
+		</div>
+
+		<div id="nav">
+
+			<ul class = "navigationlins">
+
+				<li><a class="first" href="index.html">Home</a></li>
+				<li><a class="second" href="web.html">Web</a></li>
+				<li><a class="third" href="html.html">HTML</a></li>
+                <li><a class="third" href="css.html">CSS</a></li>
+                <li><a class="third" href="javascript.html">JavaScript</a></li>
+                <li><a class="third" href="jquery.html">JQuery</a></li>
+                
+
+			</ul>
+
+		</div>
+        
+        
+
+		<div id="web-content">
+        <p class="web-paragraph">Java Script Forms</p>
+        <p>In this page you will be learning about Regular Expressions that you could use on forms for validation purposes. Regular Expression is 
+        a condition that the user has to meet in order to go to the next object/element. For example, if you have a field where you want the user to type their email address
+        and if someone writes their telephone number by mistake, then it's a problem of validating your form. However with the help of Regular Expression
+        you can easily put a condition that the user has to meet for each of the elements/fields in a form. </p>
+
+
+		
+        <div id="regularexpression">
+        <img src="images/regularexpression.fw.png" alt="Regular Expression">
+		</div>
+        
+        <div id="regularexpressionexamples">
+        <p class="form-message">Regular Expressions</p>
+        <p>Phone Number</p>
+        <p>This is an example of the regular expression that you could use to test if a valid phone number been typed by the user. This code just checks
+        if ten digit has been entered and that there is nothing else part from the digit (i.e. any text, etc). </p>
+        <div id="regularexpressionphonenumber">
+        <img src="images/regexpressionnumber.fw.png" alt="regular expression - phone number"/>
+        </div>
+        
+        <p>Email Address</p>
+        <p>This is an example of the regular expression that you could use to test if an email address is valid or not. I have said in the code that there should be a word starting which should end in the symbol @. 
+         After the symbol it should have anything in lowercase or upper case which then followed by a dot symbol and a minimum two or three character to end.  </p>
+        <div id="regularexpressionemail">
+        <img src="images/regexpressionemail.fw.png" alt="regular expression - email address"/>
+        </div>
+       
+        </div>
+        
+        
+       
+       
+      <form action="javascriptformdemo.html" method="get">
+   <button>JavaScript Form Demo</button>
+   </form>
+        
+        
+        </div>		
+
+	
+    
+  
+
+
+
+   
+        
+
+
+    
+
+
+
+<div id="footer">
+
+<ul class = "footer-nav">
+
+				<li><a class="first" href="contactus.html">Contact Us</a></li>
+				<li><a class="second" href="aboutus.html">About Us</a></li>
+				
+
+			</ul>
+
+
+
+</div>
+
+
+
+
+</div>
+
+<script type="text/javascript">
+
+
+$('#slider').cycle({
+	
+	fx:			'scrollHorz' ,
+	timeout:	3000,
+	next:		"#next",
+	prev:		"#prev",
+	pager:		"#pager",
+	pause:		1
+		
+});
+
+      </script>
+</body>
+</html>

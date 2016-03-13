@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JQuery Examples</title>
+<link rel="stylesheet" type="text/css" href="css/nav.css" />
+
+<script type="text/javascript" src="js/jquery-1.2.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+<div id="wrap">
+    	<div id="header">
+			<img src="images/logo.png" alt="Logo" title="Logo"/>
+		</div>
+
+		<div id="nav">
+
+			<ul class = "navigationlins">
+
+				<li><a class="first" href="index.html">Home</a></li>
+				<li><a class="second" href="web.html">Web</a></li>
+				<li><a class="third" href="html.html">HTML</a></li>
+                <li><a class="third" href="css.html">CSS</a></li>
+                <li><a class="third" href="javascript.html">JavaScript</a></li>
+                <li><a class="third" href="jquery.html">JQuery</a></li>
+
+			</ul>
+
+		</div>
+        
+        
+
+		<div id="web-content">
+        <p class="web-paragraph">JQuery Examples</p>
+        <p>JQuery syntax basically looking for you to slect an HTML element and then do some action on the element that you have selected. </p>
+        <div id="jquerypicture">
+        <img src="images/jquerysyntax.fw.png" alt="JQuery syntax" />        
+        </div>
+        
+        <div id="jqueryhideandshow">
+        <p class="form-message">Jquery - Hide and Show</p>
+        <p>This is a demo of how you can easily put two buttons to show and hide something on your website. Click on the button and it will show you an example. 
+        For the purpose of this demo, I have created a paragraph with some text and made two buttons which hides the text and shows the text when you click on them. </p>
+        
+        <p class="demoparagraph">Click on the hide button and I will disappear and click on the Show button to bring me back !!</p>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+         <button type="button" id="hideandshowbutton">Click to see example (open/close)</button>
+        <div id="hideandshowcode">
+         <img src="images/jqueryhide.fw.png" alt="alert" />
+        </div>
+        </div>
+        
+        
+        
+        <div id="jquerychangestyle">
+        <p class="form-message">Jquery - CSS Styling</p>
+        <p>This is a demo of showing that you can put a specified CSS style on an element and it will take effect depends on your action. For the purpose of this 
+        demo, you will see a text below, you can change the style of that text by clicking on the button. </p>
+        
+        <p class="democsstest">This is a paragraph for testing purposes</p>
+		<button id="changeparagraph">Change paragraph style</button>
+         <button type="button" id="stylebutton">Click to see example (open/close)</button>
+        <div id="stylecode">
+         <img src="images/jquerystyle.fw.png" alt="alert" />
+        </div>
+        </div>
+        
+        
+        
+        </div>			
+
+	
+    
+  
+
+
+
+   
+        
+
+
+    
+
+
+
+<div id="footer">
+
+<ul class = "footer-nav">
+
+				<li><a class="first" href="contactus.html">Contact Us</a></li>
+				<li><a class="second" href="aboutus.html">About Us</a></li>
+				
+
+			</ul>
+
+
+
+</div>
+
+
+
+
+</div>
+
+<script type="text/javascript">
+
+
+$(document).ready(function(){
+  $("#changeparagraph").click(function(){
+    $(".democsstest").css("background-color","darkgreen");
+	$(".democsstest").css("color","white");
+	$(".democsstest").css("border","4px solid black");
+  });
+});
+
+
+
+
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $(".demoparagraph").hide();
+  });
+  $("#show").click(function(){
+    $(".demoparagraph").show();
+  });
+});
+
+
+
+$(document).ready(function(){
+  $("#hideandshowbutton").click(function(){
+    $("#hideandshowcode").fadeToggle(2000);
+  });
+});
+
+
+$(document).ready(function(){
+  $("#stylebutton").click(function(){
+    $("#stylecode").fadeToggle(2000);
+  });
+});
+
+
+
+
+$('#slider').cycle({
+	
+	fx:			'scrollHorz' ,
+	timeout:	3000,
+	next:		"#next",
+	prev:		"#prev",
+	pager:		"#pager",
+	pause:		1
+		
+});
+
+      </script>
+</body>
+</html>

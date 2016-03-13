@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JavaScript DOM Events</title>
+<link rel="stylesheet" type="text/css" href="css/nav.css" />
+
+<script type="text/javascript" src="js/jquery-1.2.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+<div id="wrap">
+    	<div id="header">
+			<img src="images/logo.png" alt="Logo" title="Logo"/>
+		</div>
+
+		<div id="nav">
+
+			<ul class = "navigationlins">
+
+				<li><a class="first" href="index.html">Home</a></li>
+				<li><a class="second" href="web.html">Web</a></li>
+				<li><a class="third" href="html.html">HTML</a></li>
+                <li><a class="third" href="css.html">CSS</a></li>
+                <li><a class="third" href="javascript.html">JavaScript</a></li>
+                <li><a class="third" href="jquery.html">JQuery</a></li>
+                
+
+			</ul>
+
+		</div>
+        
+        
+
+		<div id="web-content">
+        <p class="web-paragraph">Java Script - DOM Events </p>
+        
+        <p>JavaScript DOM Events are used to execute JavaScript when an event take place such as clicking on the mouse, hovering over an element/object, etc. In this 
+        web page I will be showing some of the common DOM events which are appealing to the users.  </p>
+        
+         <div id="dommethods">
+         <p class="form-message">DOM Events - Methods and Descriptions </p>
+         <div id="htmlelement">
+         <img src="images/htmlelement.fw.png"  alt="html elements"/>
+        </div>
+        
+        
+ 
+        </div>
+        
+        
+        
+        
+       
+       <div id="date">
+       <p>Click on the "Display Date" button and it will show you the current data and time.  </p>
+        <p id="demo"></p>
+        <button type="button" onclick="displayDate()">Display Date</button>
+        <button type="button" id="clicktofade">Click to see the code (open/close)</button>
+        <div id="datatimecode">
+         <img src="images/dateandtime.fw.png" alt="date and time"/>
+        </div>
+        </div>
+        
+        
+        <div id="eventsexample">
+       <p>Click on the "Display Date" button and it will show you the current data and time.  </p>
+       <div id="alertexample">
+        <p id="alerttext">Click on me and you will see an alert</p>
+        <button type="button" id="clicktoseealertcode">Click to see the code (open/close)</button>
+        <div id="alertcode">
+         <img src="images/alertcode.fw.png" alt="alert" />
+        </div>
+        </div>
+        
+        </div>
+        
+        
+        <div id="eventsexample2">
+       <p>Click on the "button" and it will change the text background colour.  </p>
+       <div id="changecolourexample">
+        <p id="changecolourtext">This text will change its background colour</p><br>
+<button type="button" onclick="changeStyle()">Change - Background Colour</button>
+<button type="button" id="clicktoseechangecolourtextcode">Click to see the code (open/close)</button>
+        <div id="changecolourtextcode">
+         <img src="images/changetext.fw.png" alt="change colour" />
+        </div>
+        </div>
+        
+        </div>
+        
+       
+       
+       
+        
+        
+        
+        
+        
+        
+        
+        </div>
+	
+   
+
+   
+        
+
+
+    
+
+
+
+<div id="footer">
+
+<ul class = "footer-nav">
+
+				<li><a class="first" href="contactus.html">Contact Us</a></li>
+				<li><a class="second" href="aboutus.html">About Us</a></li>
+				
+
+			</ul>
+
+
+
+</div>
+
+
+
+
+</div>
+
+<script type="text/javascript">
+
+
+
+
+
+
+
+status = 1;
+function changeStyle() {    
+
+x = document.getElementById("changecolourtext");
+
+if(status==1) {
+    x.style.backgroundColor = 'darkgreen';
+    status = 2;
+}
+else if(status==2) {
+    x.style.backgroundColor = 'darkblue';
+    status = 3;
+}
+else if(status==3) {
+    x.style.backgroundColor = 'brown';
+    status = 4;
+}
+else if (status==4){
+	x.style.backgroundColor = 'black';
+    status = 5;
+}
+else if (status==5){
+	x.style.backgroundColor = 'red';
+    status = 1;
+}
+
+}
+
+
+
+
+document.getElementById("alerttext").onclick = clickalertmessage
+
+function clickalertmessage(){
+	alert ("This is an alert to show you clicked me !! ");
+}
+
+
+
+
+$(document).ready(function(){
+  $("#clicktofade").click(function(){
+    $("#datatimecode").fadeToggle(2000);
+  });
+});
+
+
+$(document).ready(function(){
+  $("#clicktoseealertcode").click(function(){
+    $("#alertcode").fadeToggle(2000);
+  });
+});
+
+
+
+
+$(document).ready(function(){
+  $("#clicktoseechangecolourtextcode").click(function(){
+    $("#changecolourtextcode").fadeToggle(2000);
+  });
+});
+
+
+
+
+
+
+function displayDate()
+{
+document.getElementById("demo").innerHTML=Date();
+}
+
+
+
+$('#slider').cycle({
+	
+	fx:			'scrollHorz' ,
+	timeout:	3000,
+	next:		"#next",
+	prev:		"#prev",
+	pager:		"#pager",
+	pause:		1
+		
+});
+
+function changeImage() {
+    var image = document.getElementById('light-test');
+    if (image.src.match("lighton")) {
+        image.src = "images/lightoff.png";
+    } else {
+        image.src = "images/lighton.png";
+    }
+}
+
+      </script>
+</body>
+</html>
