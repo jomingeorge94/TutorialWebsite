@@ -1,0 +1,532 @@
+body {
+	background-image: url(../images/background.jpg);
+}
+#header {
+	margin-top:20px;
+	margin-bottom:0px;
+	
+}
+#wrap {
+	margin:0 auto;
+	padding:0;
+	width:980px;
+	height:auto;
+	overflow:hidden;
+	background-color:#CCC;
+	border:10px solid #CCC;
+	border-radius:7px;
+	box-shadow:0 0 1px 1px #CCC;	
+	
+}
+
+
+#nav ul {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:auto;
+	overflow:hidden;
+		
+	background-image:url(../images/navbarcolour.jpg)
+}
+
+#nav ul li {
+	display:inline-block;
+	margin:0;
+	padding:10px;
+	float:left;
+	border-right:3px solid #999;
+	height:25px;
+	
+}
+
+#nav ul li:last-child {
+	border-right:none;
+}
+
+#nav ul li a {
+	font-size:20px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0;
+	padding:10px;
+	color:#9CF;
+	text-decoration:none;
+	text-align:center;
+}
+
+#nav ul li a:hover {
+	color:#FFF;
+	font-weight:bold;
+	
+}
+
+/*--------------------------------Image Slide CSS----------------------------------------------*/
+#html {	padding-left:10px;
+}
+
+#hero	{	width:960px;
+			height:500px;
+			display: block;
+			position:relative;
+			margin:20px auto;
+			border:5px solid #333;
+			border-radius:7px;
+			box-shadow:0 0 1px 1px #000000;	
+			
+}
+
+#slider {	width:960px;
+			height:500px;
+			display:block;
+			position:absolute;
+}
+
+#next{
+	background-image: url(../images/next.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	float: right;
+	height: 100%;
+	width: 110px;
+	position: relative;
+	z-index: 99;
+	cursor: pointer;
+}
+
+#prev{	background-image: url(../images/previous.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+		display: block;
+		float: left;
+		height: 100%;
+		width: 110px;
+		position: relative;
+		z-index: 99;
+		cursor: pointer;
+}
+
+
+
+#pager {	width:100%;
+			text-align:center;
+			display:block;
+			position:absolute;
+			z-index:10;
+			bottom:20px;
+			
+}
+
+#pager a {	width:10px;
+			height:10px;
+			display:inline-block;
+			position:relative;
+			background-color:#333;
+			border:1px solid #333;
+			margin:0 10px;
+			border-radius:20px;
+			font-size:.0em;
+			color:transparent;
+}
+
+#pager a.activeSlide{	background-color:#fff;
+						
+}
+#slider-items {	width:960px;
+				margin:auto;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+
+#footer {	margin-top:50px;
+			border-radius:7px;
+			box-shadow:0 0 1px 1px #E3E3E3;	
+			border:10px solid #000;
+			background-color:#000;
+			color:#FFF;
+			
+}
+
+#footer ul {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	list-style-type:none;
+	background-color:#000;
+}
+
+#footer ul li {
+	display:inline-block;
+	margin:0;
+	padding:10px;
+	float:right;
+	border-left:3px solid #999;
+	height:25px;
+	
+}
+
+#footer ul li:last-child {
+	border-right:none;
+}
+
+#footer ul li a {
+	font-size:20px;
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0;
+	padding:10px;
+	color:#9CF;
+	text-decoration:none;
+	text-align:center;
+	
+}
+
+#footer ul li a:hover {
+	color:#FFF;
+	font-weight:bold;
+	
+}
+
+
+#membershipetails {	padding-top:40px;
+					
+						
+}
+
+/*-------------------------------------------------------------------*/
+
+
+
+h2 {	margin-top:10px;
+		padding-left:10px;
+		font:24px "Comic Sans MS", cursive;
+		margin-bottom:10px;
+		
+}
+
+p {		padding-left:10px;
+		font:16px "Comic Sans MS", cursive;	
+		padding-top:0;
+		text-align:left;
+		
+		
+}
+
+#form-wrap{	width:98%;
+			border:5px solid #000;
+			background-color:#666;
+			
+			
+			
+			border-radius:7px;
+			padding-left:1%;
+			color:#FFF;
+			
+			
+			
+}
+
+#addresscontactform {	padding-left:14%;
+						
+}
+
+form {	width:100%;
+		margin: 10px auto;
+		
+		
+		
+}
+
+label {	display:block;
+		margin:5px 0 5px 20px;
+		font:18px "Comic Sans MS", cursive;
+		color:#000;
+		
+}
+
+input {	width:250px;
+		margin:0 0 0 20px;
+}
+
+textarea {	width:250px;
+			margin:0 0 0 20px;
+}
+
+fieldset {	border:none;
+			background-color:#666;
+			padding:0 0 0px 0;
+			
+}
+
+.labelone {	margin-top:10px;
+			
+}
+
+.btn {	width:125px;
+		
+}
+
+h4 {	font:24px "Comic Sans MS", cursive;
+		color:#CCC;
+		font-weight:bold;
+}
+
+#submitmessage {	padding-top:20px;
+					text-align:center;
+					font: 16px "Comic Sans MS", cursive;
+					
+					
+}
+
+.web-paragraph {	
+					font:"Comic Sans MS", cursive;
+					font-size:24px;
+					text-align:center;
+					font-weight:bold;
+					padding-top:10px;
+}
+
+.web-content-bulletpoints {	list-style-type:square;
+							font:"Comic Sans MS", cursive;
+							font-size:18px;
+}
+
+.description {	list-style-type:none;
+				padding-bottom:10px;
+				padding-top:2px;
+}
+
+.forms-paragraph {	font-size:28px;
+}
+
+.form-message {	font:"Comic Sans MS", cursive;
+				font-size:20px;
+}
+
+
+#next-button {	text-align:center;
+				float:right;
+				margin-top: 7px;
+				
+}
+
+#previous-button  {	text-align:center;
+					float:none;
+					margin-top:20px;
+					
+}
+
+#textfield, #regularexpression, #radiobutton, #dropdownlist, #textareabox, #passwordpicture, #submitbuttonpicture, #regularexpressionphonenumber, #regularexpressionemail {	text-align:center;
+}
+
+#form-demo {	float:right;
+				margin-top:20px;
+}
+
+/*------------------------Form Demo Page--------*/
+
+#form-example {	border:1px solid #000;
+				border-radius:10px;
+				background-color:#099;
+				padding-left:20px;
+				color:#000;
+				font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.star {	color:#C00;
+}
+
+#title-form { padding-top:10px;
+			  padding-bottom:10px;
+}
+#secondname-form,#dob-form {	float:right;
+					padding-right:10px;
+					
+}
+
+#gender-form, #address-form, #position-form, #email-form, #telephone-form,#posiionfound-form, #describe-form, #employmentstatus-form {	padding-top:10px;
+}
+
+#aboutuspic {	text-align:center;
+				padding-top:10px;
+}
+
+/*------------------------Java Script Page - overview--------*/
+ 
+#javascript-adding {	text-align:center;
+						border:solid 3px #666;
+						border-radius:7px;
+						margin-top:10px;
+}
+
+#javascript-showing,#javascript-inandex{	text-align:center;
+						border:solid 3px #666;
+						border-radius:7px;
+						margin-top:20px;
+}
+
+
+#lightbulb {	text-align:center;
+				margin-top:10px;
+				border:solid 3px #000000;
+				border-radius:7px;
+				background-color:#666;
+				
+}
+
+
+
+#panel,#jquerytext, #stringhide, #string, #numberhide, #number, #boolean, #booleanhide, #arrayhide, #array, #nullandundefine, #nullandundefinehide 
+{
+margin-top:10px;
+padding:5px;
+text-align:center;
+background-color:#666;
+border:solid 3px #000000;
+border-radius:7px;
+color:#FFF;
+}
+#bulbimage, #string, #number, #boolean, #array, #nullandundefine
+{
+margin-top:10px;
+padding:50px;
+display:none;
+background-color:#666;
+text-align:center;
+border:solid 3px #000000;
+border-radius:7px;
+color:#FFF;
+
+}
+
+#datatypeimages-number, #datatypeimages-string, #datatypeimages-nullanddefine, #datatypeimages-array, #datatypeimages-boolean, #css-overviewpicture, #classselectorexample {	text-align:center;
+}
+
+/*------------------------Java Script Page - dom evenets--------*/
+
+#date , #eventsexample, #eventsexample2, #htmlheading, #paragraphsandbreaks, #htmlimages, #htmllists, #htmllinks, #backgroundcss, #boxmodelcss, #cssoverflow, #css-overviewpicture, #classselectorexample, #regularexpressionexamples, #jqueryhideandshow, #jquerychangestyle, #css-tylesheet  {	border:solid 3px #000000;
+background-color:#666;
+border-radius:7px;
+color:#FFF;
+padding-bottom:30px;
+margin-top:10px;
+
+}
+#javascriptquestions {	border:solid 10px #FFFFFF;
+						border-radius:7px;
+						border-top-style:groove;
+						border-bottom-style:groove;
+						border-left-style:groove;
+						border-right-style:groove;
+						background-color:#036;
+						color:#FFF;
+						margin-top:10px;
+	
+}
+#clicktofade, #clicktoseealertcode, #clicktoseechangecolourtextcode, #clicktoseeheadindsandcode, #paragraphcode, #htmlimagecode, #unorderedcode, #orderedcode, #definitioncode, #htmllinkcode, #internallinkscode, #externallinkscode, #htmlvalidator, #internalexternalcss, #backgroundcssbutton, #backgroundimagebutton, #margincssbutton, #paddingcssbutton, #bordercssbutton, #overflowcssbutton, #quizbutton, #hideandshowbutton, #stylebutton, #cssstylesheetbutton {	
+float:right;
+
+}
+
+#datatimecode, #alertcode, #changecolourtextcode, #headingcode, #paragraphpicture, #htmlimagepicture, #unorderedpicture, #orderedpicture, #definitionpicture, #htmllinkpictures, #internallinkspicture, #externallink, #htmlvalidatorpicture, #cssstylesheet, #backgroundcolorpicture, #backgroundimagepicture, #borderpicture, #paddingpicture, #marginpicture, #overflowpicture, #javascriptquestions, #hideandshowcode, #stylecode, #cssstylesheetpicture  {	display:none;
+				text-align:center;
+				padding-top:10px;
+}
+
+#alerttext, #changecolourtexts, .demoparagraph, .democsstest, #messagesend {	border:solid 3px #FFFFFF;
+
+border-radius:7px;
+	text-align:center;
+	background-color:#09C;
+	color:#FFF;
+	border-top-style:dotted;
+	border-bottom-style:dotted;
+	border-left-style:dotted;
+	border-right-style:dotted;
+	
+	
+	
+}
+
+#changecolourtext {	color:#FFF;
+}
+
+#htmlelement, #boxmodelpicture {	text-align:center;
+				padding-bottom:10px;
+}
+
+#structureimage, #jquerypicture, #jquerypictureversion {	text-align:center;
+}
+
+.quotefromw3c {	border:4px #036;
+				border-radius:7px;
+				border-top-style:groove;
+				border-bottom-style:groove;
+				border-left-style:groove;
+				border-right-style:groove;
+				background-color:#666;
+				color:#FFF;
+				padding-bottom:30px;
+	
+}
+
+#quotefromw3clink {	color:#9C3;
+					float:right;
+}
+
+#videoonthepage  {	text-align:center;
+					border:4px #036;
+					border-radius:7px;
+					border-top-style:groove;
+					border-bottom-style:groove;
+					border-left-style:groove;
+					border-right-style:groove;
+					background-color:#666;
+					color:#FFF;
+}	
+
+
+#firstwebsite, #webhistory, #totalscore {border-radius:7px;
+margin-top:0px;
+					text-align:center;
+					background-color:#666;
+					color:#FFF;	
+					border-top-style:groove;
+					border-bottom-style:groove;
+					border-left-style:groove;
+					border-right-style:groove;
+}
+
+#linktofirstwebsite {	color:#FFF;
+}
+
+#addresstextarea  {	margin-left:84px;
+}
+#mail {	margin-left:100px;
+}
+#messagebox {	margin-left:130px;
+}
+#buttonsjavascript {	margin-top:10px;
+}
+
+#javascriptquestions {	text-align:center;
+				padding-left:20%;
+}
+
+#questiontable1, #questiontable2, #questiontable3, #questiontable4, #questiontable5 {	border:2px solid #FFF;
+					border-top-style:dotted;
+					border-bottom-style:dotted;
+					border-left-style:dotted;
+					border-right-style:dotted;
+					width:50%;
+}
+
+#contactustable, #formdemotable {	text-align:left;
+					width:100%; 
+					
+}
+#hidemybullet1, #hidemybullet2, #hidemybullet3 {	list-style-type:none;
+}
