@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS Overview</title>
+<link rel="stylesheet" type="text/css" href="css/nav.css" />
+
+<script type="text/javascript" src="js/jquery-1.2.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+<div id="wrap">
+    	<div id="header">
+			<img src="images/logo.png" alt="Logo" title="Logo"/>
+		</div>
+
+		<div id="nav">
+
+			<ul class = "navigationlins">
+
+				<li><a class="first" href="index.html">Home</a></li>
+				<li><a class="second" href="web.html">Web</a></li>
+				<li><a class="third" href="html.html">HTML</a></li>
+                <li><a class="third" href="css.html">CSS</a></li>
+                <li><a class="third" href="javascript.html">JavaScript</a></li>
+                <li><a class="third" href="jquery.html">JQuery</a></li>
+
+			</ul>
+
+		</div>
+        
+        
+
+		<div id="css-overview">
+        <p class="web-paragraph">CSS Overview</p>
+       	<p>CSS stands for Cascading Style Sheets. In this page you will be learning how to use CSS style on your website to control its layout and styling of how it dsiplays to the user. Using one Cascading Style Sheet
+        you can write the styling for all the webpages that you have. </p>
+        <div id="css-overviewpicture">
+        <img src="images/css-overview.fw.png" alt="css stylesheet"/>
+        </div>
+        <br />
+        <p>When using CSS, you can either write the CSS on the same page as you write the HTML or you could write the CSS on a seprate sheet which only uses to write CSS. 
+        If you are using the CSS inside your HTML, remember to have a opening tag as this &lt;style&gt;, and a closing tag of &lt;/style&gt;. You can only write the CSS code inside these 
+        two tags. Use the &lt;style&gt; in between the head tag. If you decided to write the CSS on a seprate page then create a new css file and write all the codes in that page and link
+        the CSS page that you have created on to the HTML page. </p>
+        
+        <button type="button" id="internalexternalcss">Internal and External CSS (open/close)</button>
+        <div id="cssstylesheet">
+        <p>Internal Style Sheet</p>
+        <img src="images/internalcss.fw.png" alt="internal style sheet"/>
+         <p>External Style Sheet</p>
+        <img src="images/externalcss.fw.png" alt="external style sheet"/>
+        
+        </div>
+        <br />
+        <p class="form-message">CSS Selectors</p>
+        <p>CSS Selectors are used to find an HTML element by their ID, Class, Tag, etc. CSS Syntax consists of a selector and a declaration block where you put the property and value that 
+        you want to apply on. </p>
+        <div id="classselectorexample">
+        <p>This is an example of the Class Selector</p>
+        <img src="images/cssidselector.fw.png" alt="CSS Selector"/>
+        </div>
+        </div>		
+
+	
+    
+  
+
+
+
+   
+        
+
+
+    
+
+
+
+<div id="footer">
+
+<ul class = "footer-nav">
+
+				<li><a class="first" href="contactus.html">Contact Us</a></li>
+				<li><a class="second" href="aboutus.html">About Us</a></li>
+				
+
+			</ul>
+
+
+
+</div>
+
+
+
+
+</div>
+
+<script type="text/javascript">
+
+
+
+
+$(document).ready(function(){
+  $("#internalexternalcss").click(function(){
+    $("#cssstylesheet").fadeToggle(2000);
+  });
+});
+
+
+
+$('#slider').cycle({
+	
+	fx:			'scrollHorz' ,
+	timeout:	3000,
+	next:		"#next",
+	prev:		"#prev",
+	pager:		"#pager",
+	pause:		1
+		
+});
+
+      </script>
+</body>
+</html>
